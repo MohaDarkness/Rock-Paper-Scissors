@@ -61,6 +61,8 @@ function stopTheGame() {
     document.querySelectorAll("img").forEach(image => {
         image.onclick = null;
     })
+
+    document.querySelector("button").style.display = "block";
 }
 
 function generateComputerChoice() {

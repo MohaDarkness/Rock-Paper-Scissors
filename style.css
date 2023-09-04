@@ -49,15 +49,15 @@ img{
 }
 
 #rock{
-    
+    min-width: 150px;
 }
 
 #paper{
-    
+    min-width: 150px;
 }
 
 #scissors{
-    
+    min-width: 150px;
 }
 
 #button-div{
@@ -66,8 +66,9 @@ img{
 }
 
 button{
+    display:none;
     width: min(40%,300px);
-    height: min(4vw, 80px);
+    height: min(5vw, 80px);
     border-radius: 15px;
     background-color: #816e94;
     color: white;
@@ -77,4 +78,19 @@ button{
 
 button:hover{
     background-color: #625371;
+}
+
+@media only screen and (max-width: 600px)  {
+    .items{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .items div{
+        max-width: 70px;
+    }
+    button{
+        min-width:150px;
+        min-height:30px;
+    }
 }
