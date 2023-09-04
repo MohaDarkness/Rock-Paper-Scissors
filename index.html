@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<script src="myscript.js"></script>
+
+<body>
+    <div class="wrapped-row-flex">
+        <div id="header-div">
+            <h1 id="header">Choose:</h1>
+        </div>
+        <div class="row-flex">
+            <div class="column-flex tool" id="rock">
+                <img src="./media/Rock.png" alt="" onclick="choose('rock')" id="rock-img">
+                <img src="./media/rock-shadow.png" alt="">
+                <h3>Rock</h3>
+            </div>
+            <div class="column-flex tool" id="paper">
+                <img src="./media/paper.png" alt="" onclick="choose('paper')">
+                <img src="./media/paper-shadow.png" alt="">
+                <h3>Paper</h3>
+            </div>
+            <div class="column-flex tool" id="scissors">
+                <img src="./media/scissors.png" alt="" onclick="choose('scissors')">
+                <img src="./media/scissors-shadow.png" alt="">
+                <h3>scissors</h3>
+            </div>
+        </div>
+        <div class="row-flex" id="button-div">
+            <button onclick="refreshPage()">TRY AGAIN!</button>
+        </div>
+    </div>
+</body>
+
+</html>
